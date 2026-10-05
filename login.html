@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login | Diário com Cadeado</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="" data-page="login">
+  <header class="site-header">
+    <a class="logo" href="index.html">Diário com Cadeado</a>
+    <nav aria-label="Menu principal">
+      <ul class="menu">
+        <li><a href="index.html" id="linkInicio">Início</a></li>
+        <li id="itemLogin"><a href="login.html">Login</a></li>
+        <li class="has-sub"><a href="#" id="btn-sobre">Sobre</a>
+          <ul class="submenu" id="menu-vertical-sobre">
+            <li><a href="#" data-protected>Empresa</a></li>
+            <li><a href="#" data-protected>Clientes</a></li>
+          </ul>
+        </li>
+        <li class="has-sub"><a href="#" id="btn-contato">Contato</a>
+          <ul class="submenu" id="menu-vertical-contato">
+            <li><a href="#" data-protected>Telefones</a></li>
+            <li><a href="#" data-protected>Email</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="card">
+      <h1>Login</h1>
+      <form id="formLogin" novalidate>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="voce@email.com">
+        <label for="senha">Senha</label>
+        <input type="password" id="senha" name="senha" placeholder="Sua senha">
+        <p class="msg" id="mensagem" role="alert"></p>
+        <button type="submit" class="btn">Enviar</button>
+      </form>
+      <a class="btn btn-secondary" href="sign.html">Sign-in</a>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <p>Hoje é <span id="dataAtual"></span>. Todos os direitos reservados. Desenvolvido por: Víctor de Morais Calsavara, Annelyze Costa de Paula.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
